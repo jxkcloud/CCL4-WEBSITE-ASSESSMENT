@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--standard meta stuff so the browser knows we're using modern characters-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEXEL | Web Design Portfolio</title>
+  <!--linking our CSS file. This is where the magic happens-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--NAVIGATION: The 'GPS' of the site. Kept it sticky so it follows the user-->
+  <nav>
+    <div class="logo">
+      <!-- brand logo goes here.-->
+      <img src="Assets/logo.png" alt="Logo">
+    </div>
+    <div class="nav-links">
+      <!--These anchor tags jump to the IDs defined further down the page-->
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#journal">Journal</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact-page">Contact</a>
+    </div>
+  </nav>
+
+  <!--HERO SECTION: The big 'Hello World' moment. First thing people see-->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>
+        <!--The span lets us color 'Code' differently via CSS-->
+        Creative <span>Code</span><br>
+        & Digital Design
+      </h1>
+      <p>
+        Currently exploring the intersection of art and logic. 
+        I build immersive interactive experiences using creative coding, 
+        p5.js, and modern digital design systems.
+      </p>
+      <div class="hero-buttons">
+        <!--these are just easy access buttons again-->
+        <a href="#contact-page" class="btn primary">Contact Me</a>
+        <a href="#projects" class="btn secondary">View Projects</a>
+        <a href="#gallery" class="btn secondary">Explore Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!--project section: Links out to my github repos-->
+  <section id="projects" class="reveal">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <!--Wrapped the whole card in an anchor so the entire thing is clickable-->
+      <a href="https://github.com/jxkcloud/CCL4-WEB-PROG-ASSESSMENT1" target="_blank" class="card">
+        <div class="card-image">
+          <img src="Assets/project1.jpg" alt="project">
+        </div>
+        <div class="card-content">
+          <h3>Web Programming Assessment</h3>
+          <p>Responsive web development project showcasing interface systems and layout design.</p>
+        </div>
+      </a>
+      <a href="https://github.com/jxkcloud/CCL4-CREATIVE-CODING-ASSESSMENT-2" target="_blank" class="card">
+        <div class="card-image">
+          <img src="Assets/project2.jpg" alt="project">
+        </div>
+        <div class="card-content">
+          <h3>Creative Coding Assessment</h3>
+          <p>Experimental p5.js projects focused on motion and generative interaction systems.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!--about me: highlighting that 1 year coding journey-->
+  <section id="about" class="reveal">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <div class="about-box">
+        <p>
+          I'm still in the program at the Metaverse Age Training Institute and it has been a tremendous journey. Now I've been coding for about a year and there are a lot of things I've learnt; building for the web is as much about being patient as it is about syntax. I feel like I have had "aha!" moments and a few head-scratching during my time at the Institute. It was intuitive to me in terms of design and layout logic from the beginning because I have a passion for solving a problem by determining the position of a component and creating its behavior.
+          <br><br/>
+          Let's be honest though, JavaScript - my ultimate "final boss". For instance in some weeks I had the feeling that I was trying to understand some different language than what I was accustomed to, and I was understanding asynchronous functions and very complicated logic gates. The thing I've struggled the most with in my first year is that's what made it the most rewarding. Sometimes when the script doesn't work, you feel this weird sense of being addicted to when it does work without any bugs. It has shown me that being a coder is not about learning everything — it's about being the person not to give up when the console turns red.
+          <br><br/>
+          On the down side, I'm an unabashed romantic of CSS. JS could be thought of as a set of rules to follow, whereas CSS can be thought of as an open canvas. It's so satisfying to see what comes in direct from styling – to see an otherwise boring skeleton come alive with only some changes to the properties. It is much easier to use and more “human” than any other language. Whether I am creating procedural animation or just tweaking a grid to be responsive or whatever, I feel that I am in fact creating art. Your blend of logic and creativity is the part that gets me hooked daily with coding. There's a sort of calm in a well-stylized stylesheet, at least, regardless of how difficult it may become.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--journal: personal logs about the grind and the growth-->
+  <section id="journal" class="reveal">
+    <h2 class="section-title">Journal</h2>
+    <div class="projects-grid">
+      <!-- journal entry 1 -->
+      <div class="card">
+        <div class="card-content">
+          <h3>Entry 1: The One-Year Reflection</h3>
+          <p>
+            I can't believe it's been a year since I started this! I'm in awe of the code I'm writing today, and if Day 1 had shown me the code I'm writing today, I might have had a panic attack. I'm very proud to see a student develop into being able to design a project, and truly remember taking a confused student from that point to the other. I have found that “hard” parts of coding are simply “small” enough parts that you have not broken them down into. When I hit a wall with a complex feature, I'm reminded that progress is not linear, but FTL's that are winding and non-linear. I am now at a level where I don't just look at code, I see what code can become. Passing an assessment is no longer an objective; it's about creating what is now called "living" things to populate the screen. Going from student to coder is not about being prepared with all the answers, but rather how to get the answers.
+          </p>
+        </div>
+      </div>
+      <!-- journal entry 2 -->
+      <div class="card">
+        <div class="card-content">
+          <h3>Entry 2: Why I'll Always Choose CSS</h3>
+          <p>
+            There's been been a lot of discussion about this lately: why is it that I gravitate to CSS and find myself drawn to do more and more JavaScript things that are so... "vintage. JS has a lot of baggage with it, sometimes it looks unnecessarily cumbersome and old fashioned when you're just trying to do something simple. But CSS? Today, CSS is a force to be reckoned with. It's second nature to me now to use Grid and Flexbox. I've dedicated hours and hours to perfecting hover states and transitions and I consider the “feel” of a site as important as the code underneath his hood. I believe a site should not only function well, but feel good to use. It's a lot of work coding and a lot of neurons sizzling with logic when I'm working with a stylesheet and playing with colors and spacing, but not this much. It's like I'm hearing my own tongue spoken. I miss nothing of the simplicity if layout is just right - no matter how complicated the web is.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--gallery: the visual showcase-->
+  <section id="gallery" class="reveal">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid">
+      <!--overlay divs appear on hover to show the photo titles-->
+      <div class="gallery-item"><img src="Assets/photo1.jpg" alt="gallery"><div class="gallery-overlay"><h3>car</h3></div></div>
+      <div class="gallery-item"><img src="Assets/photo2.jpg" alt="gallery"><div class="gallery-overlay"><h3>alien</h3></div></div>
+      <div class="gallery-item"><img src="Assets/photo3.jpg" alt="gallery"><div class="gallery-overlay"><h3>working with images</h3></div></div>
+      <div class="gallery-item"><img src="Assets/photo4.jpg" alt="gallery"><div class="gallery-overlay"><h3>simple pattern</h3></div></div>
+      <div class="gallery-item"><img src="Assets/photo5.jpg" alt="gallery"><div class="gallery-overlay"><h3>interactive art</h3></div></div>
+      <div class="gallery-item"><img src="Assets/photo6.jpg" alt="gallery"><div class="gallery-overlay"><h3>audio visualization</h3></div></div>
+    </div>
+  </section>
+
+  <!--Where users can actually send you stuff-->
+  <section id="contact-page" class="contact-page reveal">
+    <div class="contact-left">
+      <h1>Contact <span>Me</span></h1>
+      <p class="contact-sub">Let’s create immersive digital experiences together.</p>
+      <p class="contact-description">
+        I'm always looking to connect with other creators. 
+        Whether you have a question about my projects at the 
+        Metaverse Age Training Institute or just want to talk shop, 
+        drop a message!
+      </p>
+    </div>
+    <div class="contact-right">
+      <!--not actually working ahaha-->
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="input-group"><label>First Name</label><input type="text" placeholder="John"></div>
+          <div class="input-group"><label>Last Name</label><input type="text" placeholder="Doe"></div>
+        </div>
+        <div class="input-group"><label>Email</label><input type="email" placeholder="example@email.com"></div>
+        <div class="input-group">
+          <label>Project Type</label>
+          <select>
+            <option>Creative Coding</option>
+            <option>Web Design</option>
+            <option>Frontend Development</option>     <!--this is for options for "project type"-->
+            <option>UI / UX Design</option>
+            <option>others</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label>Message</label>
+          <textarea rows="6" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="Assets/logo.png" alt="logo">
+        <p>Creative coder focused on immersive visuals and futuristic digital experiences.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#journal">Journal</a>
+        </div>
+        <div class="footer-column">
+          <h4>Socials</h4>
+          <!--opening in _blank ensures the user doesnt leave the site-->
+          <a href="https://www.instagram.com/jkxclod_/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/jexelclaude.lising/" target="_blank">Facebook</a>
+          <a href="#contact-page">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 JEXEL :P BLEH</p>
+      <p>Designed & Developed by JEXEL CLAUDE L. LUGUE</p>
+    </div>
+  </footer>
+
+  <!--this is what are making things move.-->
+  <script>
+    //Reveal elements as I scroll down. Checks if an element is visible in the viewport.
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+        //If the top of the element is 100px from the bottom, trigger the 'active' class
+        if(revealTop < windowHeight - 100){
+          element.classList.add("active");
+        }
+      });
+    });
+
+    //make the navbar change look darker/smaller when scrolling away from the top
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector("nav");
+      if(window.scrollY > 50){
+        nav.style.background = "rgba(5,8,22,0.85)";
+        nav.style.padding = "18px 60px";
+      } else {
+        nav.style.background = "rgba(5,8,22,0.25)";
+        nav.style.padding = "24px 60px";
+      }
+    });
+
+    //parallax effect for the hero image. Moves background at half scroll speed.
+    window.addEventListener("scroll", () => {
+      const hero = document.querySelector(".hero");
+      hero.style.backgroundPositionY = window.scrollY * 0.5 + "px";
+    });
+  </script>
+</body>
+</html>
