@@ -16,7 +16,15 @@
       <!-- brand logo goes here.-->
       <img src="Assets/logo.png" alt="Logo">
     </div>
-    <div class="nav-links">
+
+    <!-- The toggle for mobile devices -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <div class="nav-links" id="nav-list">
       <!--These anchor tags jump to the IDs defined further down the page-->
       <a href="#home">Home</a>
       <a href="#projects">Projects</a>
@@ -82,9 +90,9 @@
       <div class="about-box">
         <p>
           I'm still in the program at the Metaverse Age Training Institute and it has been a tremendous journey. Now I've been coding for about a year and there are a lot of things I've learnt; building for the web is as much about being patient as it is about syntax. I feel like I have had "aha!" moments and a few head-scratching during my time at the Institute. It was intuitive to me in terms of design and layout logic from the beginning because I have a passion for solving a problem by determining the position of a component and creating its behavior.
-          <br><br/>
+          <br><br>
           Let's be honest though, JavaScript - my ultimate "final boss". For instance in some weeks I had the feeling that I was trying to understand some different language than what I was accustomed to, and I was understanding asynchronous functions and very complicated logic gates. The thing I've struggled the most with in my first year is that's what made it the most rewarding. Sometimes when the script doesn't work, you feel this weird sense of being addicted to when it does work without any bugs. It has shown me that being a coder is not about learning everything — it's about being the person not to give up when the console turns red.
-          <br><br/>
+          <br><br>
           On the down side, I'm an unabashed romantic of CSS. JS could be thought of as a set of rules to follow, whereas CSS can be thought of as an open canvas. It's so satisfying to see what comes in direct from styling – to see an otherwise boring skeleton come alive with only some changes to the properties. It is much easier to use and more “human” than any other language. Whether I am creating procedural animation or just tweaking a grid to be responsive or whatever, I feel that I am in fact creating art. Your blend of logic and creativity is the part that gets me hooked daily with coding. There's a sort of calm in a well-stylized stylesheet, at least, regardless of how difficult it may become.
         </p>
       </div>
@@ -201,6 +209,23 @@
 
   <!--this is what are making things move.-->
   <script>
+    // MOBILE MENU LOGIC: Handles the slide from left and hamburger morph
+    const menuBtn = document.querySelector("#mobile-menu");
+    const navLinks = document.querySelector("#nav-list");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+
+    // Automatically close the menu when a link is clicked
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        menuBtn.classList.remove("active");
+        navLinks.classList.remove("active");
+      });
+    });
+
     //Reveal elements as I scroll down. Checks if an element is visible in the viewport.
     const reveals = document.querySelectorAll(".reveal");
     window.addEventListener("scroll", () => {
