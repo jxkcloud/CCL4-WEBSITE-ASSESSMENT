@@ -81,9 +81,9 @@ nav{
 
 .nav-links a:hover::after{ width: 100%; }
 
-/* MOBILE MENU TOGGLE BUTTON (HAMBURGER) */
+/*mobile menu button*/
 .menu-toggle {
-  display: none; /* Hidden on desktop */
+  display: none; /*hidden on desktop*/
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
@@ -341,7 +341,7 @@ section{ padding: 140px 8%; }
 .input-group input:focus, .input-group textarea:focus, .input-group select:focus{ border-color: var(--blue); }
 .input-group select{ background: #050816; }
 
-/* FOOTER STYLING */
+/*FOOTER STYLING*/
 .footer{
   padding: 90px 8% 40px;
   background: linear-gradient(to bottom, #050816, #02040d);
@@ -381,7 +381,7 @@ section{ padding: 140px 8%; }
   transform: translateY(0px);
 }
 
-/*Making sure the wide About box fits on phones*/
+/*making sure the wide About box fits on phones*/
 @media(max-width: 1250px){
   .about-box { max-width: 95%; }
 }
@@ -389,15 +389,15 @@ section{ padding: 140px 8%; }
 @media(max-width: 900px){
   nav{ padding: 20px 40px; }
   
-  /* Decreases the logo size specifically for mobile screens */
+  /*decreases the logo size specifically for mobile screens */
   .logo img {
-    height: 60px;
+    height: 30px;
   }
 
-  /* Show the hamburger menu button */
+  /*show the menu button*/
   .menu-toggle { display: flex; }
 
-  /* MOBILE SLIDING MENU (LEFT SIDE) */
+  /*moblile left menu (LEFT SIDE)*/
   .nav-links { 
     position: fixed;
     left: -100%; /* Hidden off-screen to the left */
