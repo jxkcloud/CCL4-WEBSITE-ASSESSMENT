@@ -389,6 +389,11 @@ section{ padding: 140px 8%; }
 @media(max-width: 900px){
   nav{ padding: 20px 40px; }
   
+  /* Decreases the logo size specifically for mobile screens */
+  .logo img {
+    height: 60px;
+  }
+
   /* Show the hamburger menu button */
   .menu-toggle { display: flex; }
 
